@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PC Check App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: #0d0d0d;
+            color: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 5px; /* Reduced margin to make space for version label */
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .version-label {
+            font-size: 1.2em; /* Slightly smaller font size */
+            color: #00ff00; /* Same color as the text */
+            margin-bottom: 20px; /* Space between label and button */
+        }
+
+        .glitch {
+            font-size: 1.5em;
+            animation: glitch 1.5s infinite;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            font-size: 1.5em;
+            color: #0d0d0d;
+            background-color: #00ff00;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Verdana', sans-serif; /* Change button font */
+        }
+
+        .btn:hover {
+            background-color: #009900; /* Darker green on hover */
+        }
+
+        @keyframes glitch {
+            0% {
+                clip: rect(42px, 9999px, 44px, 0);
+                transform: skew(0.35deg);
+            }
+            10% {
+                clip: rect(44px, 9999px, 59px, 0);
+                transform: skew(0.42deg);
+            }
+            20% {
+                clip: rect(24px, 9999px, 67px, 0);
+                transform: skew(0.22deg);
+            }
+            30% {
+                clip: rect(16px, 9999px, 50px, 0);
+                transform: skew(0.56deg);
+            }
+            40% {
+                clip: rect(22px, 9999px, 68px, 0);
+                transform: skew(0.25deg);
+            }
+            50% {
+                clip: rect(11px, 9999px, 43px, 0);
+                transform: skew(0.45deg);
+            }
+            60% {
+                clip: rect(17px, 9999px, 53px, 0);
+                transform: skew(0.35deg);
+            }
+            70% {
+                clip: rect(5px, 9999px, 60px, 0);
+                transform: skew(0.22deg);
+            }
+            80% {
+                clip: rect(32px, 9999px, 74px, 0);
+                transform: skew(0.31deg);
+            }
+            90% {
+                clip: rect(47px, 9999px, 55px, 0);
+                transform: skew(0.39deg);
+            }
+            100% {
+                clip: rect(43px, 9999px, 63px, 0);
+                transform: skew(0.42deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="glitch">Download PC Check App</h1>
+        <div class="version-label">Version 1.1</div> <!-- Version label added here -->
+        <div class="btn-container">
+            <button class="btn" onclick="window.location.href='https://github.com/MMAXXui/newapp/archive/refs/heads/main.zip';">Download Now</button>
+        </div>
+    </div>
+</body>
+</html>
